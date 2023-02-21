@@ -1,0 +1,10 @@
+@use '../base/variables' as var;
+@use '../base/mixins' as mix;
+
+.main {
+   margin: 7rem auto;
+}
+
+.main__projects {
+   @include mix.create-grid(3, 1fr, 2rem);
+}

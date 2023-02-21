@@ -2,6 +2,7 @@ const { watch, parallel, src, dest } = require('gulp');
 const autoprefixer = require('autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
+const plumber = require('gulp-plumber');
 const sass = require('gulp-sass')(require('sass'));
 const cssnano = require('cssnano');
 const postcss = require('gulp-postcss');
@@ -24,6 +25,7 @@ const destPaths = {
 function styles(done) {
    src(srcPaths.scss)
       .pipe(sourcemaps.init())
+      .pipe(plumber())
       .pipe(sass())
       .pipe(postcss([autoprefixer(), cssnano()]))
       .pipe(sourcemaps.write('.'))
@@ -35,6 +37,7 @@ function styles(done) {
 function js(done) {
    src(srcPaths.js)
       .pipe(sourcemaps.init())
+      .pipe(plumber())
       .pipe(terser())
       .pipe(sourcemaps.write('.'))
       .pipe(rename({ suffix: '.min' }))
