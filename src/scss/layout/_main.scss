@@ -6,5 +6,13 @@
 }
 
 .main__projects {
-   @include mix.create-grid(3, 1fr, 2rem);
+   @include mix.create-grid(1, 1fr, 2rem);
+   
+   @include mix.tablet-size {
+      @include mix.create-grid(2, 1fr, 2rem);
+   }
+   
+   @include mix.laptop-size {
+      @include mix.create-grid(3, 1fr, 2rem);
+   }
 }

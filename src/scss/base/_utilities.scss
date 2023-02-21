@@ -1,3 +1,9 @@
+@use '../base/mixins' as mix;
+
 .container {
-   max-width: 1100px;
+   max-width: 85%;
+   
+   @include mix.desktop-size {
+      max-width: 1100px;
+   }
 }
