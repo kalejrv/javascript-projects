@@ -1,21 +1,21 @@
 {
-  "name": "vanilla-javascript-projects",
+  "name": "javascript-projects",
   "version": "1.0.0",
-  "description": "Portfolio of Vanilla JavaScript Projects",
+  "description": "Portfolio of JavaScript Projects",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kreyes96/vanilla-javascript-projects.git"
+    "url": "git+https://github.com/Kreyes96/javascript-projects.git"
   },
   "author": "Kevin Reyes",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kreyes96/vanilla-javascript-projects/issues"
+    "url": "https://github.com/Kreyes96/javascript-projects/issues"
   },
-  "homepage": "https://github.com/Kreyes96/vanilla-javascript-projects#readme",
+  "homepage": "https://github.com/Kreyes96/javascript-projects#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.15",

@@ -13,14 +13,14 @@ const notify = require('gulp-notify');
 const srcPaths = {
    scss: './src/scss/**/*.scss',
    js: './src/js/**/*.js',
-   images: './src/img/**/*'
+   images: './src/img/**/*',
 };
 
 const destPaths = {
    css: './build/css/',
    js: './build/js/',
-   images: './build/img/'
-}
+   images: './build/img/',
+};
 
 function styles(done) {
    src(srcPaths.scss)
@@ -43,7 +43,7 @@ function js(done) {
       .pipe(rename({ suffix: '.min' }))
       .pipe(dest(destPaths.js));
 
-      done();
+   done();
 };
 
 function convertImagesToWebp(done) {
