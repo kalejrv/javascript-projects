@@ -1,4 +1,4 @@
-import projects from "./projects/projectsData.min.js";
+import projects from "./projectsData.min.js";
 
 document.addEventListener('DOMContentLoaded', () => {
    showProjects();
