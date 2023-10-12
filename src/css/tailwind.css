@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Homepage. */
+.home-header-title {
+   &::after {
+      content: "";
+      width: 100%;
+      height: 20px;
+      background-color: #facc15;
+      position: absolute;
+      inset-inline-start: 0;
+      inset-block-end: 1rem;
+      z-index: -1;
+   }
+}
+
+.home-card-button:hover {
+   transition: .2s all ease-in-out;
+
+   & svg {
+      fill: #ffffff;
+      transition: .2s all ease-in-out;
+   }
+}
